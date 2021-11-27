@@ -4,7 +4,7 @@ import './landing.css'
 import ca from './createaccount.svg'
 import posts from './createpost.svg'
 import addpost from './addpost.svg'
-import { BrowserRouter as Router, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { useEffect } from 'react'
 import Aos from 'aos';
 import "aos/dist/aos.css"

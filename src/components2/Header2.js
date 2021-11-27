@@ -22,22 +22,22 @@ function Header2() {
         <div>
             <header class="header">
                 <nav class="navbar">
-                    <Link to = "/"><a class="nav-logo">Gct Intership Portal</a></Link>
+                    <Link to = "/"><div class="nav-logo">Gct Intership Portal</div></Link>
                     <ul class={ "nav-menu"  + ( clicks ? ( " active" ) : ( "" ) ) }>
                         <li class="nav-item">
-                            <Link to = "/posts"><a class="nav-link">Intership Posts</a></Link>
+                            <Link to = "/posts"><div class="nav-link">Intership Posts</div></Link>
                             {/* <Link to = "/register">Register</Link> */}
                         </li>
                         <li class="nav-item">
-                            <Link to = "/myposts"><a href="" class="nav-link">My Posts</a></Link>
+                            <Link to = "/myposts"><div href="" class="nav-link">My Posts</div></Link>
                             {/* <Link to = "/aboutus">About Us</Link> */}
                         </li>
                         <li class="nav-item">
-                            <Link to = "/createposts"><a href="" class="nav-link">Create Post</a></Link>
+                            <Link to = "/createposts"><div href="" class="nav-link">Create Post</div></Link>
                             {/* <Link to = "/login">Login</Link> */}
                         </li>
                         <li class="nav-item loginbtn">
-                            <Link to = "/"  ><a onClick = { logout } style = {{ color: "white" }} href="" class="nav-link">Logout</a></Link>
+                            <Link to = "/"  ><div onClick = { logout } style = {{ color: "white" }} href="" class="nav-link">Logout</div></Link>
                             {/* <Link to ="/register" >SignUp</Link> */}
                         </li>
                     </ul>

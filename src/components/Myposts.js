@@ -10,13 +10,11 @@ function Myposts() {
 
     const history = useHistory();
     const [posts, setPosts] = useState([])
-    const [authState, setAuthState] = useState(false);
     const [tokenofuser, setToken] = useState('');
 
     useEffect(() => {
       const fetchuserlog = async (token) => {
         if(!token){
-          setAuthState(false);
           history.push('/');
           return 0;
         }
@@ -28,13 +26,11 @@ function Myposts() {
     })
         .then(res => res.json());
         if(result.status === 'ok'){
-          setAuthState(true);
           return 0;
         }
         else{
           console.log("fake JWT code detected!");
           history.push('/');
-          setAuthState(false)
           return 0;
         }
       }

@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react'
 import { useHistory } from "react-router-dom";
 import { Posts } from './Posts';
 import { Knowmore } from './Knowmore';
+import './loader.css'
 import './myposts2.css'
 import Aos from "aos";
 import 'aos/dist/aos.css'
@@ -11,7 +12,6 @@ export const Interviewposts = () => {
     const [Active, setActive] = useState(false);
     const history = useHistory();
     const [posts, setPosts] = useState([])
-    const [authState, setAuthState] = useState(false);
     const [Postdetails, setPostdetails] = useState({})
 
     const Childtoparent = (data) => {
@@ -42,15 +42,27 @@ export const Interviewposts = () => {
         <div className = "mypostspage" style = {{ marginTop: '80px' }} data-aos = "fade-in  ">
           <div className="heading">
             <h1>Job Offers</h1>
+
             <h1 className="badge" style = {{ fontSize: "20px", }}>{ posts.length }</h1>
           </div>
-          <div className="mypostbody" style = {{ filter:( Active ? "blur(6px)" : "" )}}>
-            <div className="mypostsgrid">
-                { posts.map((e) => (
-                  <Posts id = { e._id } Getdetails = { Getdetails } tyofjob = { e.typeofjob } companyname = { e.companyname } primaryrole = { e.primaryrole } location = { e.companylocation } stipend = { e.stipend } contactnumber = { e.contactnumber } companyemail = { e.companyemail } date = { e.date } Childtoparent = { Childtoparent }/>
-                )) }
-            </div>
-          </div>
+
+        { posts.length === 0 ? (<div class="loading">
+  <div class="dot"></div>
+  <div class="dot"></div>
+  <div class="dot"></div>
+  <div class="dot"></div>
+  <div class="dot"></div>
+</div>
+) : (
+                    <div className="mypostbody">
+                    <div className="mypostsgrid">
+                        { posts.map((e) => (
+                          <Posts id = { e._id } Getdetails = { Getdetails } tyofjob = { e.typeofjob } companyname = { e.companyname } primaryrole = { e.primaryrole } location = { e.companylocation } stipend = { e.stipend } contactnumber = { e.contactnumber } companyemail = { e.companyemail } date = { e.date } Childtoparent = { Childtoparent }/>
+                        )) }
+                    </div>
+                  </div>
+        ) }
+
         </div>
         
     )
