@@ -1,0 +1,280 @@
+*{
+    margin: 0px;
+    border: 0px;
+    box-sizing: border-box;
+}
+
+.section1{
+/* background-color: aqua; */
+    height: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.imagecontainer{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.landimg{
+    height: auto;
+    width: 90%;
+    position: relative;
+    /* right: 80px; */
+    left: 60px;
+}
+
+.textcontainer{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 200px;align-items: center;
+}
+
+.textcontainer h1{
+    font-size: 45px;
+}
+
+.textcontainer p{
+    font-size: 20px;
+}
+
+.textcontainer button{
+    width: 120px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top:10px ;
+    padding-bottom: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: #482ff7;
+    color: white;
+    border-radius: 5px;
+}
+hr{
+    height: 5px;
+    color: black;
+}
+
+.line{
+    margin-top: 50px;
+    height: 2px;
+    width: 60%;
+    background-color: black;
+    border-radius: 50px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.section2{
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 130px;
+    flex-direction: column;
+}
+
+.title{
+    font-size: 26px;
+}
+
+.cardcontainer{
+    height: 350px;
+    width: 90%;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(300px, 1fr) );
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+}
+
+.cards
+{
+    height: 100%;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #f5f6fb;;
+    border-radius: 45px 45px 45px 0px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.cards img {
+    height: auto;
+    width: 250px;
+}
+
+.imgdiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards h3{
+    font-size: 20px;
+}
+
+.cards p{
+    font-size: 15px;
+    position: relative;
+    bottom: 20px;
+}
+
+
+@media only screen and (max-width: 1568px){
+    .landingpage{
+        /* background-color: aqua; */
+    }
+
+    .textcontainer h1{
+        font-size: 45px;
+        text-align: center;
+    }
+    
+    .textcontainer p{
+        font-size: 20px;
+        text-align: center;
+
+    }
+
+    .landimg{
+        height: auto;
+        width: 90%;
+        position: relative;
+        /* right: 30px; */
+        left: 0px;
+    }
+}
+
+@media only screen and (max-width: 1568px){
+    .cards{
+        height: 90%;
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width: 1160px){
+    .cards{
+        height: 70%;
+        width: 250px;
+    }
+
+    .textcontainer h1{
+        font-size: 38px;
+    }
+    
+    .textcontainer p{
+        font-size: 17px;
+    }
+
+    .cards img {
+        height: auto;
+        width: 170px;
+    }
+
+    .cards h3{
+        font-size: 16px;
+    }
+    
+    .cards p{
+        font-size: 12px;
+        position: relative;
+        bottom: 20px;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 1012px){
+
+    .section2{
+        height: 1200px;
+    }
+
+    .cardcontainer{
+        display: grid;
+        gap: 40px;
+        height: 120%;
+        grid-template-columns: repeat( auto-fit, minmax(500px, 1fr) );
+    }
+
+    .cards{
+        height: 100%;
+        width: 350px;
+    }
+
+    .cards img {
+        height: auto;
+        width: 170px;
+    }
+
+    .cards h3{
+        font-size: 16px;
+    }
+    
+    .cards p{
+        font-size: 12px;
+        position: relative;
+        bottom: 20px;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 815px){
+
+    .section1{
+        /* background-color: aqua; */
+            height: 650px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+        
+        }
+
+        .textcontainer{
+            width: 80%;
+        }
+
+        .textcontainer h1{
+            font-size: 35px;
+        }
+        
+        .textcontainer p{
+            font-size: 17px;
+            margin: 35px;
+        }
+        
+        
+    .landimg{
+        height: auto;
+        width: 330px;
+        position: relative;
+        /* right: 30px; */
+        left: 0px;
+    }
+
+    .cards{
+        height: 100%;
+        width: 280px;
+    }
+
+    .cards h3{
+        font-size: 20px;
+    }
+    
+    .cards p{
+        font-size: 16px;
+    }
+        
+}
