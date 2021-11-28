@@ -19,10 +19,10 @@ function Home() {
                             <Link to = "/posts"><div class="nav-link">Internship Posts</div></Link>
                             {/* <Link to = "/register">Register</Link> */}
                         </li>
-                        <li class="nav-item">
+                        {/* <li class="nav-item">
                             <Link to = "/aboutus"><div href="" class="nav-link">About</div></Link>
                             {/* <Link to = "/aboutus">About Us</Link> */}
-                        </li>
+                        {/* </li> */} 
                         <li class="nav-item">
                             <Link to = "/login"><div href="" class="nav-link">Login</div></Link>
                             {/* <Link to = "/login">Login</Link> */}
