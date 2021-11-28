@@ -13,10 +13,10 @@ function Home() {
         <div>
             <header class="header">
                 <nav class="navbar">
-                    <Link to = "/"><div class="nav-logo">Gct Intership Portal</div></Link>
+                    <Link to = "/"><div class="nav-logo">Gct Internship Portal</div></Link>
                     <ul class={ "nav-menu"  + ( clicks ? ( " active" ) : ( "" ) ) }>
                         <li class="nav-item">
-                            <Link to = "/posts"><div class="nav-link">Intership Posts</div></Link>
+                            <Link to = "/posts"><div class="nav-link">Internship Posts</div></Link>
                             {/* <Link to = "/register">Register</Link> */}
                         </li>
                         <li class="nav-item">
